@@ -9,7 +9,7 @@ vpn-route
 работоспособность проверена на Ubuntu 14.04.01
 сохраняем скрипт `10vpnroutes.sh` в `/etc/NetworkManager/dispatcher.d/`:
 
-    # wget -O /etc/NetworkManager/dispatcher.d/10vpnroutes.sh http://
+    # wget -O /etc/NetworkManager/dispatcher.d/10vpnroutes.sh https://raw.githubusercontent.com/snake-hole/vpn-route/master/10vpnroutes.sh
     # chmod a+x /etc/NetworkManager/dispatcher.d/10vpnroutes.sh
   
 так же, нужно убедиться в отсутствии опции `redirect-gateway` в конфиге OpenVPN, и добавить опцию (если ее нет)
