@@ -12,9 +12,13 @@ vpn-route
     # wget -O /etc/NetworkManager/dispatcher.d/10vpnroutes.sh https://raw.githubusercontent.com/snake-hole/vpn-route/master/10vpnroutes.sh
     # chmod a+x /etc/NetworkManager/dispatcher.d/10vpnroutes.sh
   
-так же, нужно убедиться в отсутствии опции `redirect-gateway` в конфиге OpenVPN, и добавить опцию (если ее нет)
+так же, нужно убедиться в отсутствии опции `redirect-gateway` в конфиге OpenVPN, и наличии
 
     route 0.0.0.0 0.0.0.0
+    
+если VPN подключение используется только для доступа к интернет и сервер не отдает маршрутов к другим сетям, то рекомендуется так же добавить
+
+    route-nopull
   
 Использование
 -------------
